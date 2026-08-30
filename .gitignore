@@ -4,7 +4,10 @@
 # Personal config and data — every user's own job search
 cv.md
 portals.yml
-data/
+data/*
+# Tracked exception: dedup state for the Discord-notify cloud routine, so a
+# fresh cloud checkout doesn't re-notify about postings already seen locally.
+!data/scan-history.tsv
 batch/
 reports/
 output/
