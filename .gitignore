@@ -8,6 +8,9 @@ data/*
 # Tracked exception: dedup state for the Discord-notify cloud routine, so a
 # fresh cloud checkout doesn't re-notify about postings already seen locally.
 !data/scan-history.tsv
+# Tracked exception: which scan-history.tsv URLs the Discord routine has
+# already posted, so it only notifies about genuinely new postings.
+!data/discord-notified.tsv
 batch/
 reports/
 output/
